@@ -1,4 +1,4 @@
-# Frontend Developer Test - Cuponeria
+# Frontend Developer Test 1 - Cuponeria
 
 This test aims to test the candidate's knowledge regarding the technologies used by the **Cuponeria Frontend Developer Team**.
 
