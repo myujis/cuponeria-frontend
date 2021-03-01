@@ -64,13 +64,15 @@ export const Price = styled.div`
     z-index: 6;
     color: white;
     grid-area: b;
-    align-self: flex-start;
-    justify-self: flex-end;
+    align-self: ${(props: isMobile) =>
+        props.isMobile ? 'center' : 'flex-start'};
+    justify-self: ${(props: isMobile) =>
+        props.isMobile ? 'center' : 'flex-end'};
 `;
 
 export const Title = styled.h2`
     max-width: 100%;
-    text-align: start;
+    text-align: ${(props: isMobile) => (props.isMobile ? 'center' : 'start')};
     grid-area: a;
     align-self: flex-start;
 `;
@@ -85,8 +87,11 @@ export const Description = styled.span`
     max-width: 100%;
     text-align: start;
     grid-area: d;
-    align-self: flex-start;
-    justify-self: flex-end;
+    align-self: ${(props: isMobile) =>
+        props.isMobile ? 'center' : 'flex-start'};
+    justify-self: ${(props: isMobile) =>
+        props.isMobile ? 'center' : 'flex-end'};
+    margin: 15px;
 `;
 
 export const Back = styled.div`

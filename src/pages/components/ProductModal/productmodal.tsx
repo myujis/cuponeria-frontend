@@ -25,15 +25,17 @@ export default function ProductModal(props: Props) {
                 <>
                     <Background>
                         <Root isMobile={isMobile}>
-                            <Title>{props.product.title}</Title>
-                            <Price>
+                            <Title isMobile={isMobile}>
+                                {props.product.title}
+                            </Title>
+                            <Price isMobile={isMobile}>
                                 {props.product.price.toLocaleString('en-IN', {
                                     style: 'currency',
                                     currency: 'BRL',
                                 })}
                             </Price>
                             <Img src={props.product.image} />
-                            <Description>
+                            <Description isMobile={isMobile}>
                                 "{props.product.description}"
                             </Description>
                             <Back
